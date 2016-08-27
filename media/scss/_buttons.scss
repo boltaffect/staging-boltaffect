@@ -1,0 +1,98 @@
+/*
+    Buttons
+*/
+.btn {
+  border-radius: 0px;
+}
+
+.btn-sm {
+  padding: 11px 30px !important;
+  display: inline-block;
+}
+
+.btn-md {
+  padding: 13px 25px !important;
+  display: inline-block;
+}
+
+.btn-lg {
+  padding: 15px 30px !important;
+  display: inline-block;
+}
+
+.btn-xlg {
+  padding: 17px 30px !important;
+  display: inline-block;
+}
+
+.btn-black {
+  background-color: $navy;
+  border-color: transparent;
+  color: $white;
+}
+
+.btn-black:hover {
+  background-color: $magenta;
+  border-color: transparent;
+  color: $white;
+}
+
+.btn-color {
+  background-color: $magenta;
+  border-color: transparent;
+  color: $white;
+}
+
+.btn-color:hover {
+  background-color: #1db2a2;
+  border-color: transparent;
+  color: $white;
+}
+
+.btn-white {
+  background-color: rgba(255,255,255,1);
+  border-color: transparent;
+  color: $navy;
+}
+
+.btn-white:hover {
+  background-color: rgba(255,255,255,0.85);
+  border-color: transparent;
+  color: $navy;
+}
+
+.btn-white-outline {
+  background-color: transparent;
+  border-color: $white;
+  color: $white;
+}
+
+.btn-white-outline:hover {
+  background-color: $white;
+  border-color: $white;
+  color: $navy;
+}
+
+.btn-black-outline {
+  background-color: transparent;
+  border-color: $navy;
+  color: $navy;
+}
+
+.btn-black-outline:hover {
+  background-color: $navy;
+  border-color: $navy;
+  color: $white;
+}
+
+.btn-color-outline {
+  background-color: transparent;
+  border-color: $magenta;
+  color: $magenta;
+}
+
+.btn-color-outline:hover {
+  background-color: $magenta;
+  border-color: $magenta;
+  color: $white;
+}

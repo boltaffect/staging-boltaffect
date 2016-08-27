@@ -1,0 +1,29 @@
+/**
+ * Base Styles
+ */
+
+*, html{
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 18px;
+}
+
+img{
+  max-width: 100%;
+}
+
+a {
+    color: $magenta;
+    cursor: pointer;
+    text-decoration: none;
+
+    &:hover, &:active{
+      color: $dark-gray;
+    }
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  color: $navy;
+}

@@ -1,0 +1,109 @@
+/**
+ * Banners, Overlays, and Calls to action
+ */
+
+/* Edge Banner/Background */
+
+.edge{
+  position: relative; /* for absolutely positioned :after */
+  margin: 0 0 100px 0;
+  text-align: center;
+  background-color: $navy;
+  color: $white;
+}
+
+.edge:after {
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 100%;
+  bottom: -100px;
+  left: 0;
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:#{$navy-encoded}' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  -moz-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+
+.edge.alt{
+  margin: 100px 0 0 0;
+}
+
+.edge.alt:after{
+  display: none;
+}
+
+.edge.alt:before {
+  // @extend .edge:after;
+
+  content: '';
+  position: absolute;
+  display: block;
+  height: 100px;
+  width: 100%;
+  top: -100px;
+  left: 0;
+
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:#{$navy-encoded}' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  -moz-transform: scaleY(1) scaleX(-1);
+  -webkit-transform: scaleY(1) scaleX(-1);
+  -ms-transform: scaleY(1) scaleX(-1);
+  transform: scaleY(1) scaleX(-1);
+}
+
+.edge .edge-padding {
+  padding: 20px 40px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Call to action */
+
+.action{
+  margin-top: 60px;
+
+  .action-title{
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .action-content{
+    font-size: 16px;
+  }
+}
+
+/* Banner overlays */
+
+.overlay-dark,
+.overlay-light {
+    position: relative;
+    z-index: 1;
+}
+
+.overlay-dark:before,
+.overlay-light:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.overlay-dark:before {
+    background-color: rgba(34,34,34,0.85);
+}
+
+.overlay-light:before {
+    background-color: rgba(255,255,255,0.4);
+}
