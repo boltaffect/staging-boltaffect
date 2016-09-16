@@ -989,6 +989,11 @@ form label.error {
       .testimonial.alt .testimonial-cite a:hover, .testimonial.alt .testimonial-cite a:visited, .testimonial.alt .testimonial-cite a:active {
         color: #EB2E65; }
 
+.testimonial blockquote,
+.testimonial [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
 /* Pricing */
 .pricing-box {
   background: #FFF;

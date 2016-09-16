@@ -196,6 +196,12 @@ $orange: #F06655;
   }
 }
 
+.testimonial blockquote,
+.testimonial [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
+
 /* Pricing */
 
 .pricing-box {
